@@ -17,10 +17,50 @@
 		<meta property="og:image:width" content="640" />
 		<meta property="og:image:height" content="480" />
 		<meta property="og:locale" content="ru_RU" />
-		<link rel="stylesheet" href="css/style.css" />
 		<title>Windows 7 End of Support Countdown</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="jquery.js"></script>
+		<script src="jquery.lwtCountdown.js"></script>
+		<script>
+			jQuery(document).ready(function() {
+				$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day':		14,
+						'month':	1,
+						'year':		2020,
+						'hour': 	15,
+						'min': 		00,
+						'sec': 		00
+					}
+				});
+			});
+		</script>
 	</head>
 	<body>
-		<h1>lal</h1>
+		<div id="container">
+			<h1>До окончание поддержки<br><br>Windows 7 осталось:</h1>
+			<div id="countdown_dashboard">
+				<div class="dash weeks_dash">
+					<div class="digit">0</div>
+					<div class="digit">0</div>
+				</div>
+				<div class="dash days_dash">
+					<div class="digit">0</div>
+					<div class="digit">0</div>
+				</div>
+				<div class="dash hours_dash">
+					<div class="digit">0</div>
+					<div class="digit">0</div>
+				</div>
+				<div class="dash minutes_dash">
+					<div class="digit">0</div>
+					<div class="digit">0</div>
+				</div>
+				<div class="dash seconds_dash">
+					<div class="digit">0</div>
+					<div class="digit">0</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
