@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Windows 7 End of Support Countdown</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.countdown.js"></script>
+		<script class="source" type="text/javascript">
+			$('.countdown').downCount({
+				date: '06/10/2013 12:00:00',
+				offset: +10
+			}, function () {
+				alert('WOOT WOOT, done!');
+			});
+		</script>
+	</head>
+	<body>
+		<ul class="countdown">
+			<li>
+				<span class="days">00</span>
+				<p class="days_ref">days</p>
+			</li>
+			<li class="seperator"> </li>
+			<li>
+				<span class="hours">00</span>
+				<p class="hours_ref">hours</p>
+			</li>
+			<li class="seperator">:</li>
+			<li>
+				<span class="minutes">00</span>
+				<p class="minutes_ref">minutes</p>
+			</li>
+			<li class="seperator">:</li>
+			<li>
+				<span class="seconds">00</span>
+				<p class="seconds_ref">seconds</p>
+			</li>
+		</ul>
+	</body>
+</html>
