@@ -22,6 +22,7 @@
 		<link rel="stylesheet" href="style.css" />
 		<script src="jquery.js"></script>
 		<script src="jquery.lwtCountdown.js"></script>
+		<script src="push.js"></script>
 		<script>
 			jQuery(document).ready(function() {
 				$('#countdown_dashboard').countDown({
@@ -34,6 +35,15 @@
 						'sec': 		00
 					}
 				});
+			});
+			Push.create("Hello world!",{
+				body: "This is example of Push.js Tutorial",
+				icon: '/og_image.png',
+				timeout: 2000,
+				onClick: function () {
+					window.focus();
+					this.close();
+				}
 			});
 		</script>
 	</head>
