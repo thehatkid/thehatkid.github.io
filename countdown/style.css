@@ -1,0 +1,88 @@
+html { height: 100% }
+body {
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background: radial-gradient(ellipse at center, #103f4f 0%, #000000 75%);
+	font-family: 'Share Tech Mono', monospace
+}
+.container {
+	text-align: center;
+	width: 800px;
+	height: 440px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	margin: -200px 0 0 -400px
+}
+h1, h2 { color: #fff; text-shadow: 0 0 16px rgba(16, 172, 224, 1) }
+h1 { font-size: 40px; margin: 0 0 48px }
+h2 { font-size: 20px; margin: 0 0 8px }
+a { color: #f0a0f0; text-shadow: 0 0 16px rgba(224, 172, 224, 1); text-decoration: none }
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 2px solid #4080f0;
+	box-shadow: 0 0 16px rgba(72, 136, 248, 1);
+	margin: 16px 0;
+}
+#countdown {
+	font-size: 64px;
+	color: #fff;
+	margin: 70px 0 100px;
+	font-weight: bold;
+}
+#countdown .number-wrapper { margin: 16px; box-shadow: 0 5px 8px #000; position: relative }
+#countdown .number {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	background: #000;
+	background-image: linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+	background-image: -o-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+	background-image: -moz-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+	background-image: -webkit-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+	background-image: -ms-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+	-webkit-border-top-right-radius: 7px;
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	-moz-border-radius-topleft: 0;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	padding: 0 12px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	border: 1px solid #555;
+	-moz-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+	-webkit-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+	box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+	-moz-text-shadow: 0 3px 3px #000000;
+	-webkit-text-shadow: 0 3px 3px #000000;
+	text-shadow: 0 3px 3px #000000;
+	font-family: 'Helvetica Neue','Helvetica','Arial', sans-serif;
+}
+.caption {
+	font-size: 12px;
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	text-shadow: 0 0 8px rgba(224, 224, 224, 0.5);
+	color: #aaa
+}
+footer { font-size: 14px; font-weight: normal; text-align: center; color: #aaa }
+footer a { color: #80a0f0; text-shadow: 0 0 8px rgba(216, 172, 248, 1) }
