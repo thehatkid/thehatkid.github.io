@@ -26,7 +26,7 @@ CountdownTimer.prototype={
 }
 function countdown(){
 	// Set countdown limit (2019/12/31 23:59:59)
-	var tl = new Date('2020/01/15 00:00:00');
+	var tl = new Date('2020/01/14 11:00:00');
 	// You can add time's up message here
 	var timer = new CountdownTimer('countdown',tl,'<span class="number-wrapper"><span class="number end">Time is up!</span></span>');
 	timer.countDown();
