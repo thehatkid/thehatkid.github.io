@@ -1,0 +1,31 @@
+@font-face {
+	font-family: PerfectDOSVGA437;
+	src: url("font_dos.ttf");
+}
+
+body {
+	margin: 0;
+	background: #051020;
+	color: #d0d0f0;
+	font-family: PerfectDOSVGA437;
+}
+
+.title {
+	margin: 64px 32px;
+	color: #ffffff;
+	font-size: 32pt;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	.title {
+		font-size: 24pt;
+		margin: 64px 8px;
+	}
+}
+@media (max-width: 550px) {
+	.title {
+		font-size: 14pt;
+		margin: 64px 8px;
+	}
+}
